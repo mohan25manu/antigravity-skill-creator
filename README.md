@@ -12,17 +12,34 @@ This repository is a **Meta-Skill** designed to help build high-quality, standar
 
 ## How to Use
 
-### 1. Initialize a New Skill
+### Option 1: Interactive Mode (Recommended)
+The easiest way to create a skill with Antigravity-specific examples:
+
+```bash
+python3 scripts/interactive_create.py
+```
+
+This guided wizard will:
+- Ask questions about your skill's purpose
+- Detect which Antigravity tools you need (`browser_subagent`, `generate_image`, etc.)
+- Generate a customized SKILL.md with relevant examples
+- Create appropriate directory structure and stub files
+
+### Option 2: Quick Initialize
+For a basic template without customization:
+
 ```bash
 python3 scripts/init_skill.py my-new-skill --path ./output
 ```
 
-### 2. Validate a Skill
+### Other Operations
+
+#### Validate a Skill
 ```bash
 python3 scripts/quick_validate.py path/to/my-skill
 ```
 
-### 3. Package a Skill
+#### Package a Skill
 ```bash
 python3 scripts/package_skill.py path/to/my-skill ./dist
 ```
